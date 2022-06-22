@@ -1,0 +1,174 @@
+:root {
+  /* webpage-colors */
+  --color-one: #272a31;
+  --color-two: #ec5242;
+  --color-three: #d3d3d3;
+
+  /* webpage-fonts */
+  --font-one: 'COCOGOOSE', sans-serif;
+}
+
+/* set default font */
+* {
+  font-family: 'Lato', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Define the shape and color of the hamburger lines */
+.navbar-toggler span {
+  display: block;
+  background-color: #4f4f4f;
+  height: 6px;
+  width: 40px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  position: relative;
+  left: 0;
+  opacity: 1;
+  transition: all 0.35s ease-out;
+  transform-origin: center left;
+}
+
+.programTitle > span {
+  display: inline-block;
+  background-color: var(--color-two);
+  height: 2px;
+  width: 60px;
+  align-self: center;
+}
+
+/* top line needs a little padding */
+.navbar-toggler span:nth-child(1) {
+  margin-top: 0.3em;
+}
+
+/**
+* Animate collapse into X.
+*/
+
+/* top line rotates 45 degrees clockwise and moves up and in a bit to close the center of the X in the center of the button */
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+  transform: translate(15%, -50%) rotate(45deg);
+}
+
+/* center line goes transparent */
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+  opacity: 0;
+}
+
+/* bottom line rotates 45 degrees counter clockwise, in, and down a bit to close the center of the X in the center of the button  */
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+  transform: translate(15%, 50%) rotate(-45deg);
+}
+
+.page1 {
+  /* background-image: url(../images/main_big.png); */
+  background-image: url(../images/mobile_intro_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main {
+  padding: 0;
+}
+
+.mainTitle {
+  font-family: 'COCOGOOSE', sans-serif;
+  color: var(--color-two);
+  font-size: 3.8rem;
+  margin-top: 8rem;
+  max-width: 760px;
+}
+
+.p1Text {
+  font-size: 1.5rem;
+  background-color: rgb(245, 245, 245);
+}
+
+.card-img {
+  width: 64px !important;
+  height: 64px;
+  padding: 0;
+}
+
+.dateText {
+  font-family: 'COCOGOOSE', sans-serif;
+  font-size: 2.5rem;
+  color: var(--color-one);
+}
+
+.adressText {
+  font-size: 1.5rem;
+
+  /* font-family: var(--font-one); */
+  font-weight: 600;
+}
+
+.programTitle {
+  font-size: 1.5rem;
+}
+
+.mainProgram {
+  background-image: url(../images/pattern_bg.png);
+  background-repeat: repeat;
+  background-color: #272a31;
+}
+
+.programParts > div {
+  background-color: rgba(242, 242, 242, 0.2);
+}
+
+.programParts > div > p {
+  font-size: 1.7rem;
+}
+
+.programParts > div > h2 {
+  font-family: 'COCOGOOSE', sans-serif;
+  font-size: 1.5rem;
+  color: var(--color-two);
+  min-width: 148px !important;
+}
+
+.programParts > button {
+  background-color: var(--color-two);
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.authLine {
+  display: block;
+  background-color: var(--color-three);
+  height: 2px;
+  width: 60px;
+}
+
+.authText1 {
+  color: var(--color-two);
+}
+
+#seeMore {
+  font-size: 1.5rem;
+}
+
+#seeMore span {
+  display: inline-block;
+  color: var(--color-two);
+  transform-origin: center;
+  transform: rotate(-90deg);
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+  .programParts > div > p {
+    font-size: 0.8rem;
+    width: 100%;
+  }
+
+  .programParts > div > h2 {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
