@@ -45,8 +45,8 @@ nav li a {
   transform-origin: center left;
 }
 
-.programTitle>span,
-.aboutSec4>h2>span {
+.programTitle > span,
+.aboutSec4 > h2 > span {
   display: inline-block;
   background-color: var(--color-two);
   height: 2px;
@@ -81,8 +81,9 @@ nav li a {
 main > nav {
   z-index: 2300;
 }
+
 .logoImg {
-  height:50px;
+  height: 50px;
 }
 
 .page1 {
@@ -109,6 +110,7 @@ main {
   font-family: 'COCOGOOSE', sans-serif;
   color: var(--color-two);
   font-size: 3.9rem;
+
   /* margin-top: 8rem; */
   max-width: 900px;
 }
@@ -148,29 +150,34 @@ main {
   background-color: #272a31;
 }
 
-.programParts>div {
+.programParts > div {
   background-color: rgba(242, 242, 242, 0.2);
 }
 
-.programParts>div:hover,
-.programParts>div:active, 
-.programParts>div:focus{
-  border:2px solid #d3d3d3;
+.programParts > div:hover,
+.programParts > div:active,
+.programParts > div:focus {
+  border: 2px solid #d3d3d3;
   cursor: pointer;
 }
 
-.programParts>div>p {
+.footerText > p {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.programParts > div > p {
   font-size: 1.7rem;
 }
 
-.programParts>div>h2 {
+.programParts > div > h2 {
   font-family: 'COCOGOOSE', sans-serif;
   font-size: 1.5rem;
   color: var(--color-two);
   min-width: 148px !important;
 }
 
-.programParts>button {
+.programParts > button {
   background-color: var(--color-two);
   font-size: 2rem;
   font-weight: 400;
@@ -200,17 +207,12 @@ main {
   font-weight: 700;
 }
 
-
 .aboutSec4 img {
   --webkit-filter: grayscale(100%) invert(85%);
+
   filter: grayscale(100%) invert(85%);
   width: 200px;
   opacity: 0.5;
-}
-
-.footerText>p {
-  font-size: 1.4rem;
-  font-weight: 400;
 }
 
 @media screen and (min-width: 768px) {
@@ -220,38 +222,27 @@ main {
     background-size: cover;
   }
 
+  .mainMenu {
+    --webkit-background-clip: content-box;
+  }
+
   .mainTitle {
     font-size: 4.8rem;
   }
+
   .p1Container {
     background-image: url(../images/main_big.png);
     background-repeat: no-repeat;
     background-size: cover;
   }
 
-  .programParts>div>p {
+  .programParts > div > p {
     font-size: 0.8rem;
     width: 100%;
   }
 
-  .programParts>div>h2 {
+  .programParts > div > h2 {
     font-size: 1rem;
     text-align: center;
   }
 }
-
-/* display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    width: 100%;
-    height: auto;
-    background-image: url(../multimedia/festival-1.jpg);
-    background-size: cover;
-    background-color: rgb(255, 128, 128);
-    background-blend-mode: soft-light;
-    padding: 3rem;
-    font-family: var(--font-two);
-    color: var(--color-five);
-    font-size: 1rem;
-    font-weight: 600; */
