@@ -81,12 +81,20 @@ function addAuthor(id) {
 }
 
 window.addEventListener('load', () => {
-  for (let i = 0; i < authors.length; i += 1) {
-    addAuthor(i);
+  
+  if (document.querySelector('.authCards')) {
+    for (let i = 0; i < authors.length; i += 1) {
+      addAuthor(i);
+    }
+    document.getElementById('seeMore').click();
+    document.getElementById('seeMore').click();
   }
-  document.getElementById('menuBtn').click();
-  document.getElementById('seeMore').click();
-  document.getElementById('seeMore').click();
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+  document.querySelector('.navbar-toggler').classList.add('collapsed');
+  console.log(document.querySelector('.navbar-toggler').className);
+  console.log('DOM fully loaded and parsed');
 });
 
 document.addEventListener('scroll', () => {
