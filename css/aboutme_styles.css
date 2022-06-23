@@ -1,0 +1,217 @@
+:root {
+  /* webpage-colors */
+  --color-one: #272a31;
+  --color-two: #ec5242;
+  --color-three: #d3d3d3;
+
+  /* webpage-fonts */
+  --font-one: 'COCOGOOSE', sans-serif;
+}
+
+/* set default font */
+* {
+  font-family: 'Lato', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.ccCamp {
+  border: 3px solid var(--color-two);
+  padding: 10px;
+  color: var(--color-two);
+  font-weight: 600;
+  width: 150px;
+  text-align: center;
+}
+
+/* Define the shape and color of the hamburger lines */
+.navbar-toggler span {
+  display: block;
+  background-color: #4f4f4f;
+  height: 6px;
+  width: 40px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  position: relative;
+  left: 0;
+  opacity: 1;
+  transition: all 0.35s ease-out;
+  transform-origin: center left;
+}
+
+.programTitle > span {
+  display: inline-block;
+  background-color: var(--color-two);
+  height: 2px;
+  width: 60px;
+  align-self: center;
+}
+
+.aboutSec2 > h2 > span,
+.aboutSec3 > h2 > span,
+.aboutSec4 > h2 > span {
+  display: inline-block;
+  background-color: var(--color-two);
+  height: 2px;
+  width: 60px;
+  align-self: center;
+}
+
+/* top line needs a little padding */
+.navbar-toggler span:nth-child(1) {
+  margin-top: 0.3em;
+}
+
+/**
+* Animate collapse into X.
+*/
+
+/* top line rotates 45 degrees clockwise and moves up and in a bit to close the center of the X in the center of the button */
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+  transform: translate(15%, -50%) rotate(45deg);
+}
+
+/* center line goes transparent */
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+  opacity: 0;
+}
+
+/* bottom line rotates 45 degrees counter clockwise, in, and down a bit to close the center of the X in the center of the button  */
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+  transform: translate(15%, 50%) rotate(-45deg);
+}
+
+.logoImg {
+  height: 50px;
+}
+
+nav li a {
+  color: white !important;
+  text-decoration: none !important;
+}
+
+.page1 {
+  /* background-image: url(../images/main_big.png); */
+  background-image: url(../images/mobile_intro_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main {
+  padding: 0;
+}
+
+.mainTitle {
+  font-family: 'COCOGOOSE', sans-serif;
+  color: var(--color-two);
+  font-size: 3.7rem;
+  margin-top: 8rem;
+  max-width: 760px;
+}
+
+.p1Text {
+  font-size: 1.55rem;
+  background-color: rgb(256, 256, 256);
+  font-weight: 500;
+  max-width: 900px;
+}
+
+.adressText {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.dateText {
+  font-size: 1.5rem;
+  color: var(--color-one);
+  font-weight: 600;
+}
+
+.aboutSec2 > h2 {
+  /* font-family: 'COCOGOOSE', sans-serif; */
+  font-size: 3.6rem;
+  font-weight: 580;
+}
+
+.aboutSec2 > p,
+.aboutSec3 > p {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.aboutSec2 > h2,
+.aboutSec2 > p,
+.aboutSec2 > div {
+  max-width: 800px;
+}
+
+.aboutSec3 > h2 .aboutSec4 > h2 {
+  font-size: 2rem;
+  font-weight: 580;
+}
+
+.imgCont1 {
+  background-image: url(../images/ACD-2016_GS.jpg);
+  background-size: cover;
+  background-color: rgb(93, 32, 26, 1);
+  background-blend-mode: soft-light;
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  width: 100%;
+  height: 450px;
+}
+
+.imgCont1 > p,
+.imgCont2 > p {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.imgCont2 {
+  background-image: url(../images/ACD-2018_GS.jpg);
+  background-size: cover;
+  background-color: rgb(93, 32, 26, 1);
+  background-blend-mode: soft-light;
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  width: 100%;
+  height: 450px;
+}
+
+.aboutSec4 img {
+  --webkit-filter: grayscale(100%) invert(85%);
+
+  filter: grayscale(100%) invert(85%);
+  width: 200px;
+  padding: 2rem;
+  opacity: 0.5;
+}
+
+.footerText > p {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.collapsed {
+  background-color: white;
+}
+
+@media (min-width: 768px) {
+  .collapsed {
+    background-color: transparent;
+  }
+
+  .aboutSec5 > .logo > img {
+    --webkit-filter: grayscale(100%) invert(87%);
+
+    filter: grayscale(100%) invert(87%);
+  }
+
+  .aboutSec5 {
+    background-color: var(--color-one);
+    color: white;
+  }
+}
