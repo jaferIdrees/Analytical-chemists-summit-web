@@ -86,6 +86,10 @@ main > nav {
   height: 50px;
 }
 
+.collapsed {
+  background-color: white;
+}
+
 .page1 {
   /* background-image: url(../images/main_big.png); */
   background-image: url(../images/mobile_intro_bg.png);
@@ -229,6 +233,11 @@ main {
 }
 
 @media screen and (min-width: 768px) {
+
+  .collapsed {
+    background-color:transparent;
+  }
+
   .page1 {
     background-image: none;
     background-repeat: no-repeat;

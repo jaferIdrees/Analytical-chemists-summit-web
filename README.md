@@ -18,9 +18,7 @@
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
+-Visit the [Live Demo] above.
 
 To get a local copy up and running follow these simple example steps.
 
@@ -46,9 +44,6 @@ To get a local copy up and running follow these simple example steps.
 - Twitter: [@twitterhandle](https://twitter.com/jafel_l)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/jaferll)
 
-👤 **Cindy Shin**
-
-- https://www.behance.net/adagio07
 
 ## 🤝 Contributing
 
@@ -62,9 +57,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Special acknowledgement and thanks goes to Cindy Shin in Behance who invented the original design. @https://www.behance.net/adagio07
 
 ## 📝 License
 

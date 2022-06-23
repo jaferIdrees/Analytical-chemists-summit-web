@@ -194,7 +194,15 @@ main {
   font-weight: 400;
 }
 
+.collapsed {
+  background-color:white;
+}
+
 @media (min-width: 768px) {
+  .collapsed {
+    background-color:transparent;
+  }
+
   .aboutSec5 > .logo > img {
     --webkit-filter: grayscale(100%) invert(87%);
     filter: grayscale(100%) invert(87%);

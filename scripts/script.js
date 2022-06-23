@@ -108,6 +108,6 @@ document.addEventListener('scroll', () => {
 
 // change drop down menu backgroundColor
 
-document.getElementById('menuBtn').addEventListener('click', () => {
-  document.querySelector('.collapsed').style.backgroundColor = 'white';
-});
+// document.getElementById('menuBtn').addEventListener('click', () => {
+//   document.querySelector('.collapsed').style.backgroundColor = 'white';
+// });
