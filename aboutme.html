@@ -23,8 +23,31 @@
 
 <body>
   <main class="container-fluid p-0">
+    <nav class="px-5 navbar fixed-top d-none d-lg-flex navbar-expand-lg p-0 navbar bg-dark justify-content-end">
+      <ul class="navbar-nav">
+        <li class="nav-item mx-2">
+          <a href="">
+          <img src="Icons/facebook.png" alt="">
+        </a>
+        </li>
+        <li class="nav-item mx-2">
+          <a href="#">
+            <img src="Icons/twitter.png" alt="">
+          </a>
+        </li>
+        <li class="nav-item mx-2">
+          <a style="text-decoration: none;" href="#">English</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a href="#">My Page</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a href="#">Log out</a>
+        </li>
+      </ul>
+    </nav>
     <div class="page1">
-      <nav class="px-5 navbar fixed-top navbar-expand-lg navbar" aria-label="Fifth navbar example">
+      <nav class="mainMenu px-5 navbar fixed-top navbar-expand-lg navbar" aria-label="Fifth navbar example">
         <div class="container-fluid">
 
           <button id="menuBtn" class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -36,7 +59,10 @@
           </button>
 
           <div class="collapsed navbar-collapse bg-muted d-overlay mt-2" id="collapsableContent">
-            <ul class="navbar-nav ms-auto mb-2 pt-1 mb-lg-0 align-items-lg-center">
+            <ul class="w-100 navbar-nav ms-1 me-0 mb-2 pt-1 mb-lg-0 align-items-lg-center justify-content-end">
+              <div class="container-fluid h-50 me-auto">
+                <a class="navbar-brand" href="index.html"><img class="logoImg" src="images/ACD_logo.png" alt=""></a>
+              </div>
               <li class="nav-item ">
                 <a href="aboutme.html" class="nav-link mx-4 active text-dark">About</a>
               </li>
@@ -53,7 +79,7 @@
                 <a href="#works-section" class="nav-link mx-4 text-dark">News</a>
               </li>
               <li class="nav-item ">
-                <a href="#" class="nav-link"><div class="ccCamp d-flex">CC Campaign</div></a>
+                <a href="#" class="nav-link"><div class="ccCamp d-flex">ACD Campaign</div></a>
               </li>
             </ul>
           </div>
@@ -61,46 +87,45 @@
       </nav>
       <section class="p1Container container-fluid d-flex flex-column align-items-center">
         <h1 class="mainTitle p-3 text-center mt-15">
-          CREATIVE COMMONS GLOBAL SUMMIT 2015
+          Analytical Chemistry Digital Summit 2022
         </h1>
         <div class="p1Text border border-white mx-3">
           <P class="m-3 p-3 text-center">
-            The Global Summit brings together the community of experts, academics, and activists who comprise the
-            Creative Commons affiliate network in a different country every two. This year,we hope to expand our
-            invitaion list including organizations and individuals
+            Lab Manager will host industry experts speaking on these issues and more during its Analytical Chemistry Digital Summit on January 25-26. Hear from top leaders in the industry as they explain how to choose analytical instrumentation for your lab, novel applications and methods, 
+            and what the future holds for analytical chemistry. 
           </P>
         </div>
         <p class="adressText m-3 mb-0 mt-4 text-center">
-          Please contact us per Email for any further questions about CC Global Summit 2015!
+          Please contact us per Email for any further questions about ACD Summit 2022!
         </p>
         <h2 class="dateText mx-3 mt-0 mb-5 text-center">
-          ccsummit2015@cckorea.org
+          summit@labmanager.org
         </h2>
       </section>
     </div>
-    <section class="aboutSec2 pb-4 border-bottom">
-      <h2 class="text-center py-5 mt-5 d-felx flex-column">Creative Commons Global Summit 2015 Logo<br><span></span>
+    <section class="aboutSec2 pb-4 border-bottom d-flex flex-column align-items-center">
+      <h2 class="text-center py-5 mt-5 d-felx flex-column">Analytical Chemistry Digital Summit 2022 Logo<br><span></span>
       </h2>
-      <p class="text-center p-2">The logo of CC Global Summit 2015 was decided through the logo competition from 8.June
+      <p class="text-center p-2">The logo of ACD Global Summit 2022 was decided through the logo competition from 8.June
         to 7.July.</p>
       <div class="container p-3 border logo d-flex justify-content-center">
-        <img class="w-50" src="images/logo.png" alt="">
+        <img class="w-50" src="images/ACD_logo.png" alt="">
       </div>
     </section>
     <section class="aboutSec3 border-bottom d-flex flex-column justify-content-center">
-      <h2 class="text-center p-1 mt-3 d-felx flex-column">See the past CC Global Summits<br><span></span></h2>
-      <p class="text-center p-2">Take a look at the last two CC Global Summits which took place in Buenos Aires and in
+      <h2 class="text-center p-1 mt-3 d-felx flex-column">See the past ACD Global Summits<br><span></span></h2>
+      <p class="text-center p-2">Take a look at the last two ACD Global Summits which took place in Muniche and in
         Warsaw.</p>
       <div class="authorBox row px-3">
-        <div class="imgCont1 d-flex flex-lg-column border col-lg-5 container my-1 py-3 justify-content-center">
-          <img class="w-100" src="images/about_2013_hover.png" alt="">
+        <div class="imgCont1 d-flex flex-column text-center border col-lg-5 container my-1 py-3 justify-content-center">
+          <p>2016</p>ACD Global Summits in Muniche
         </div>
-        <div class="imgCont2 d-flex flex-lg-column col-lg-5 container my-1 py-3 justify-content-center">
-          <img class="w-100" src="images/about_2011_hover.png" alt="">
+        <div class="imgCont2 d-flex flex-column text-center col-lg-5 container my-1 py-3 justify-content-center">
+          <p>2018</p>ACD Global Summits in Warsaw
         </div>
       </div>
     </section>
-    <section class="aboutSec4 container-fluid bg-dark border-bottom d-flex flex-column justify-content-center">
+    <section class="aboutSec4 container-fluid bg-dark border-bottom d-flex d-lg-none flex-column justify-content-center">
       <h2 class="text-center text-white p-1 mt-3 d-felx flex-column">Partner<br><span></span></h2>
       <div class="partnerContainer p-2 d-flex flex-wrap justify-content-center">
         <img src="images/waters_logo.png" alt="Waters Logo">
@@ -111,12 +136,12 @@
       </div>
     </section>
     <footer class="aboutSec5 my-3 d-flex justify-content-between">
-      <div class="container p-3 logo d-flex justify-content-center">
-        <img class="w-50" src="images/logo.png" alt="">
+      <div class="p-3 logo d-flex justify-content-lg-end">
+        <img class="w-75" src="images/ACD_logo.png" alt="">
       </div>
-      <div class="footerText d-flex">
+      <div class="footerText d-flex justify-content-lg-start flex-fill">
         <p class="my-auto pe-2">
-          2015 Creative Commons Korea Some Rights Reserved.
+          2022 ACD Global Summit Some Rights Reserved.
         </p>
       </div>
     </footer>

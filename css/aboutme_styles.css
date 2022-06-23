@@ -16,6 +16,15 @@
   box-sizing: border-box;
 }
 
+.ccCamp {
+  border: 3px solid var(--color-two);
+  padding: 10px;
+  color: var(--color-two);
+  font-weight: 600;
+  width: 150px;
+  text-align: center;
+}
+
 /* Define the shape and color of the hamburger lines */
 .navbar-toggler span {
   display: block;
@@ -31,7 +40,7 @@
   transform-origin: center left;
 }
 
-.programTitle > span {
+.programTitle>span {
   display: inline-block;
   background-color: var(--color-two);
   height: 2px;
@@ -39,9 +48,9 @@
   align-self: center;
 }
 
-.aboutSec2 > h2 > span,
-.aboutSec3 > h2 > span,
-.aboutSec4 > h2 > span {
+.aboutSec2>h2>span,
+.aboutSec3>h2>span,
+.aboutSec4>h2>span {
   display: inline-block;
   background-color: var(--color-two);
   height: 2px;
@@ -73,6 +82,15 @@
   transform: translate(15%, 50%) rotate(-45deg);
 }
 
+.logoImg {
+  height: 50px;
+}
+
+nav li a {
+  color: white !important;
+  text-decoration: none !important;
+}
+
 .page1 {
   /* background-image: url(../images/main_big.png); */
   background-image: url(../images/mobile_intro_bg.png);
@@ -96,6 +114,7 @@ main {
   font-size: 1.55rem;
   background-color: rgb(256, 256, 256);
   font-weight: 500;
+  max-width: 900px;
 }
 
 .adressText {
@@ -109,25 +128,51 @@ main {
   font-weight: 600;
 }
 
-.aboutSec2 > h2 {
+.aboutSec2>h2 {
   /* font-family: 'COCOGOOSE', sans-serif; */
   font-size: 3.6rem;
   font-weight: 580;
 }
 
-.aboutSec2 > p,
-.aboutSec3 > p {
+.aboutSec2>p,
+.aboutSec3>p {
   font-size: 1.8rem;
   font-weight: 400;
 }
 
-.aboutSec3 > h2 .aboutSec4 > h2 {
+.aboutSec3>h2 .aboutSec4>h2 {
   font-size: 2rem;
   font-weight: 580;
 }
 
 .imgCont1 {
-  background-color: rgb(93, 32, 26, 1);
+  background-image: url(../images/ACD-2016_GS.jpg);
+  background-size: cover;
+  background-color: rgb(93,32,26,1);
+  background-blend-mode:soft-light;
+  color: white;
+  font-size: 2rem;
+  font-weight:700;
+  width: 100%;
+  height: 450px;
+} 
+
+.imgCont1 > p,
+.imgCont2 > p {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.imgCont2 {
+  background-image: url(../images/ACD-2018_GS.jpg);
+  background-size: cover;
+  background-color: rgb(93,32,26,1);
+  background-blend-mode:soft-light;
+  color: white;
+  font-size: 2rem;
+  font-weight:700;
+  width: 100%;
+  height: 450px;
 }
 
 .aboutSec4 img {
@@ -138,7 +183,25 @@ main {
   opacity: 0.5;
 }
 
-.footerText > p {
+.aboutSec2>h2,
+.aboutSec2>p,
+.aboutSec2>div {
+  max-width: 800px;
+}
+
+.footerText>p {
   font-size: 1.4rem;
   font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .aboutSec5>.logo>img {
+    --webkit-filter: grayscale(100%) invert(87%);
+    filter: grayscale(100%) invert(87%);
+  }
+
+  .aboutSec5 {
+    background-color: var(--color-one);
+    color: white;
+  }
 }

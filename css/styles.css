@@ -78,6 +78,9 @@ nav li a {
   transform: translate(15%, 50%) rotate(-45deg);
 }
 
+main > nav {
+  z-index: 2300;
+}
 .logoImg {
   height:50px;
 }
@@ -147,6 +150,13 @@ main {
 
 .programParts>div {
   background-color: rgba(242, 242, 242, 0.2);
+}
+
+.programParts>div:hover,
+.programParts>div:active, 
+.programParts>div:focus{
+  border:2px solid #d3d3d3;
+  cursor: pointer;
 }
 
 .programParts>div>p {
