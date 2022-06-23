@@ -1,19 +1,19 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Analytical Chemistry Digital Summit 2022
 
-> Description the project.
+> Interactive website for the Analytical Chemistry Digital Summit 2022
 
 
 ## Built With
 
-- Major languages
-- Frameworks
+- Major languages: html, css, javascript
+- Frameworks: Bootstrap 5
 - Technologies used
 
-## Live Demo (if available)
+## Live Demo 
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://jaferidrees.github.io/Html_css_Capstone/)
 
 
 ## Getting Started
@@ -40,17 +40,15 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 
-👤 **Author1**
+👤 **Ja'fer Yousef**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/jaferIdrees)
+- Twitter: [@twitterhandle](https://twitter.com/jafel_l)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/jaferll)
 
-👤 **Author2**
+👤 **Cindy Shin**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- https://www.behance.net/adagio07
 
 ## 🤝 Contributing
 
