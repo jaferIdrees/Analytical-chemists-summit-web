@@ -12,34 +12,34 @@
       </div>
       */
 const authors = [{
-  name: 'Yochai Benkler',
+  name: 'Gene Hall',
   authImg: 'speakers/speaker_01.png',
-  authText1: 'Director of Art Centre Nabi and a board member of CC Korea',
-  authText2: 'As the main venue for new media art production in Korea, Nabi promotes cross-disciplinary collaboration and understanding among science technology, humanities, and the arts.',
+  authText1: 'Professor, Analytical Chemist, Rutgers University',
+  authText2: 'Gene is an analytical chemist who specializes in ICPMS, FT-IR, Raman, MALDI, Q-TOF, and XRF Laboratory. Dr. Hall earned his BS degree from Tusculum College and his PhD from Virginia Polytechnic.',
 },
 {
-  name: 'SohYeong Noh',
+  name: 'Renã Robinson',
   authImg: 'speakers/speaker_03.png',
-  authText1: 'Berkman Professor of Enterpreneurial Legal Studies at Harvard Law School',
-  authText2: 'Benkler studies commons-based peer production, and published his seminal book The Wealth of Networks in 2006',
+  authText1: 'Associate Professor of Chemistry Vanderbilt University',
+  authText2: 'She has a nationally and internationally recognized research program and is a leader in the field of proteomics for her work in aging, Alzheimer’s disease, and applications relevant to human health and disparities.',
 },
 {
-  name: 'Kilnam Chon',
+  name: 'Siqi Sun',
   authImg: 'speakers/speaker_02.png',
-  authText1: '',
-  authText2: 'As the main venue for new media art production in Korea, Nabi promotes cross-disciplinary collaboration and understanding among science technology, humanities, and the arts.',
+  authText1: 'Application Lab Manager, Analytik Jena US',
+  authText2: 'She led the application research and technical support for the North American market. She is the voting member of American Society for Testing and Materials (ASTM) Committee D02 on Petroleum Products, Liquid Fuels, and Lubricants and D19 on water.',
 },
 {
-  name: 'SohYeong Noh',
+  name: 'Toby Blackburn',
   authImg: 'speakers/speaker_04.png',
-  authText1: 'Berkman Professor of Enterpreneurial Legal Studies at Harvard Law School',
-  authText2: 'Benkler studies commons-based peer production, and published his seminal book The Wealth of Networks in 2006',
+  authText1: 'Head of Business Development and Strategy, Emerald Cloud Lab',
+  authText2: 'Toby Blackburn serves as the head of business development and strategy at Emerald Cloud Lab (ECL), a physical laboratory which scientists can access remotely via the Internet that allows them to run, analyze, and interpret experiments without setting foot in the lab.',
 },
 {
-  name: 'Kilnam Chon',
+  name: 'Brian Frezza',
   authImg: 'speakers/speaker_05.png',
-  authText1: '',
-  authText2: 'As the main venue for new media art production in Korea, Nabi promotes cross-disciplinary collaboration and understanding among science technology, humanities, and the arts.',
+  authText1: 'Co-Founder and Co-Chief Executive Officer Emerald Cloud Lab',
+  authText2: 'Brian is a Hollerith and Wolfram Innovator award-winner who has received over four hundred combined citations for published articles in the Journal of the American Chemical Society (JACS) and Chemical Physics. He has also served as a peer reviewer for both JACS and Langmuir, and guest-lectured at CMU, TSRI, and Stanford.',
 },
 {
   name: 'SohYeong Noh',
@@ -86,4 +86,15 @@ window.addEventListener('load', () => {
   }
   document.getElementById('seeMore').click();
   document.getElementById('seeMore').click();
+});
+
+document.addEventListener('scroll', () => {
+  console.log(window.scrollY);
+  const mainMenu = document.querySelector('.mainMenu');
+  console.log(mainMenu.style.backgroundColor);
+  if (window.scrollY > 200) {
+    mainMenu.style.backgroundColor = 'white';
+  } else {
+    mainMenu.style.backgroundColor = 'transparent';
+  }
 });

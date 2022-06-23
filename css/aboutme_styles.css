@@ -131,9 +131,8 @@ main {
 }
 
 .aboutSec4 img {
-  --webkit-filter: grayscale(100%);
-
-  filter: grayscale(100%) invert(100%);
+  --webkit-filter: grayscale(100%) invert(85%);
+  filter: grayscale(100%) invert(85%);
   width: 200px;
   padding: 2rem;
   opacity: 0.5;

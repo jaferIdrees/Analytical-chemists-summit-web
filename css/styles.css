@@ -16,6 +16,20 @@
   box-sizing: border-box;
 }
 
+.ccCamp {
+  border: 3px solid var(--color-two);
+  padding: 10px;
+  color: var(--color-two);
+  font-weight: 600;
+  width: 150px;
+  text-align: center;
+}
+
+nav li a {
+  color: white !important;
+  text-decoration: none !important;
+}
+
 /* Define the shape and color of the hamburger lines */
 .navbar-toggler span {
   display: block;
@@ -31,7 +45,8 @@
   transform-origin: center left;
 }
 
-.programTitle > span {
+.programTitle>span,
+.aboutSec4>h2>span {
   display: inline-block;
   background-color: var(--color-two);
   height: 2px;
@@ -74,17 +89,27 @@ main {
   padding: 0;
 }
 
+.slogan {
+  /* font-family: 'COCOGOOSE', sans-serif; */
+  color: var(--color-two);
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-top: 12rem;
+  max-width: 760px;
+}
+
 .mainTitle {
   font-family: 'COCOGOOSE', sans-serif;
   color: var(--color-two);
-  font-size: 3.8rem;
-  margin-top: 8rem;
-  max-width: 760px;
+  font-size: 3.9rem;
+  /* margin-top: 8rem; */
+  max-width: 900px;
 }
 
 .p1Text {
   font-size: 1.5rem;
   background-color: rgb(245, 245, 245);
+  max-width: 950px;
 }
 
 .card-img {
@@ -116,22 +141,22 @@ main {
   background-color: #272a31;
 }
 
-.programParts > div {
+.programParts>div {
   background-color: rgba(242, 242, 242, 0.2);
 }
 
-.programParts > div > p {
+.programParts>div>p {
   font-size: 1.7rem;
 }
 
-.programParts > div > h2 {
+.programParts>div>h2 {
   font-family: 'COCOGOOSE', sans-serif;
   font-size: 1.5rem;
   color: var(--color-two);
   min-width: 148px !important;
 }
 
-.programParts > button {
+.programParts>button {
   background-color: var(--color-two);
   font-size: 2rem;
   font-weight: 400;
@@ -161,14 +186,58 @@ main {
   font-weight: 700;
 }
 
+
+.aboutSec4 img {
+  --webkit-filter: grayscale(100%) invert(85%);
+  filter: grayscale(100%) invert(85%);
+  width: 200px;
+  opacity: 0.5;
+}
+
+.footerText>p {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
 @media screen and (min-width: 768px) {
-  .programParts > div > p {
+  .page1 {
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .mainTitle {
+    font-size: 4.8rem;
+  }
+  .p1Container {
+    background-image: url(../images/main_big.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .programParts>div>p {
     font-size: 0.8rem;
     width: 100%;
   }
 
-  .programParts > div > h2 {
+  .programParts>div>h2 {
     font-size: 1rem;
     text-align: center;
   }
 }
+
+/* display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    height: auto;
+    background-image: url(../multimedia/festival-1.jpg);
+    background-size: cover;
+    background-color: rgb(255, 128, 128);
+    background-blend-mode: soft-light;
+    padding: 3rem;
+    font-family: var(--font-two);
+    color: var(--color-five);
+    font-size: 1rem;
+    font-weight: 600; */
