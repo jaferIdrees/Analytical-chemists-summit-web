@@ -183,6 +183,7 @@ main {
 
 .aboutSec4 img {
   --webkit-filter: grayscale(100%) invert(85%);
+
   filter: grayscale(100%) invert(85%);
   width: 200px;
   padding: 2rem;
@@ -195,16 +196,17 @@ main {
 }
 
 .collapsed {
-  background-color:white;
+  background-color: white;
 }
 
 @media (min-width: 768px) {
   .collapsed {
-    background-color:transparent;
+    background-color: transparent;
   }
 
   .aboutSec5 > .logo > img {
     --webkit-filter: grayscale(100%) invert(87%);
+
     filter: grayscale(100%) invert(87%);
   }
 

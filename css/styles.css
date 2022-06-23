@@ -227,15 +227,15 @@ main {
 
 .aboutSec4 img {
   --webkit-filter: grayscale(100%) invert(85%);
+
   filter: grayscale(100%) invert(85%);
   width: 200px;
   opacity: 0.5;
 }
 
 @media screen and (min-width: 768px) {
-
   .collapsed {
-    background-color:transparent;
+    background-color: transparent;
   }
 
   .page1 {
