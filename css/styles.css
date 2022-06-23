@@ -78,6 +78,10 @@ nav li a {
   transform: translate(15%, 50%) rotate(-45deg);
 }
 
+.logoImg {
+  height:50px;
+}
+
 .page1 {
   /* background-image: url(../images/main_big.png); */
   background-image: url(../images/mobile_intro_bg.png);
