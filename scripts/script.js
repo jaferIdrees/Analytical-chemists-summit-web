@@ -74,11 +74,14 @@ function addAuthor(id) {
   baseCont.className = 'col-lg-5 authorBox row px-3';
   if (id > 1) {
     baseCont.classList.add('collapsable');
-    baseCont.classList.add('order-5');
   }
   baseCont.appendChild(contDiv1);
   document.querySelector('.authCards').appendChild(baseCont);
 }
+
+// document.getElementById('seeMore').addEventListener('click', () => {
+//   document.getElementById('seeMore').textContent = 'Less';
+// });
 
 window.addEventListener('load', () => {
   if (document.querySelector('.authCards')) {
