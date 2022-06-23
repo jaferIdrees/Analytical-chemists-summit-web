@@ -45,8 +45,8 @@ nav li a {
   transform-origin: center left;
 }
 
-.programTitle>span,
-.aboutSec4>h2>span {
+.programTitle > span,
+.aboutSec4 > h2 > span {
   display: inline-block;
   background-color: var(--color-two);
   height: 2px;
@@ -78,7 +78,7 @@ nav li a {
   transform: translate(15%, 50%) rotate(-45deg);
 }
 
-main>nav {
+main > nav {
   z-index: 2300;
 }
 
@@ -135,8 +135,6 @@ main {
 
 .adressText {
   font-size: 1.5rem;
-
-  /* font-family: var(--font-one); */
   font-weight: 600;
 }
 
@@ -150,34 +148,34 @@ main {
   background-color: #272a31;
 }
 
-.programParts>div {
+.programParts > div {
   background-color: rgba(242, 242, 242, 0.2);
 }
 
-.programParts>div:hover,
-.programParts>div:active,
-.programParts>div:focus {
+.programParts > div:hover,
+.programParts > div:active,
+.programParts > div:focus {
   border: 2px solid #d3d3d3;
   cursor: pointer;
 }
 
-.footerText>p {
+.footerText > p {
   font-size: 1.4rem;
   font-weight: 400;
 }
 
-.programParts>div>p {
+.programParts > div > p {
   font-size: 1.7rem;
 }
 
-.programParts>div>h2 {
+.programParts > div > h2 {
   font-family: 'COCOGOOSE', sans-serif;
   font-size: 1.5rem;
   color: var(--color-two);
   min-width: 148px !important;
 }
 
-.programParts>button {
+.programParts > button {
   background-color: var(--color-two);
   font-size: 2rem;
   font-weight: 400;
@@ -198,19 +196,7 @@ main {
   font-size: 1.5rem;
 }
 
-/* #seeMore:not(.collapse) span:nth-child(2) {
-  display: none;
-} */
-
 #seeMore span:nth-child(2) {
-  display: none;
-}
-
-#seeMore:not(.collapsed) span:nth-child(2) {
-  display: inline-block;
-}
-
-#seeMore:not(.collapsed) span:nth-child(1) {
   display: none;
 }
 
@@ -223,13 +209,20 @@ main {
   font-weight: 700;
 }
 
+#seeMore:not(.collapsed) span:nth-child(2) {
+  display: inline-block;
+}
+
+#seeMore:not(.collapsed) span:nth-child(1) {
+  display: none;
+}
+
 #seeMore:not(.collapsed) span:nth-child(3) {
   transform: rotate(90deg);
 }
 
 .aboutSec4 img {
   --webkit-filter: grayscale(100%) invert(85%);
-
   filter: grayscale(100%) invert(85%);
   width: 200px;
   opacity: 0.5;
@@ -256,12 +249,12 @@ main {
     background-size: cover;
   }
 
-  .programParts>div>p {
+  .programParts > div > p {
     font-size: 0.8rem;
     width: 100%;
   }
 
-  .programParts>div>h2 {
+  .programParts > div > h2 {
     font-size: 1rem;
     text-align: center;
   }
