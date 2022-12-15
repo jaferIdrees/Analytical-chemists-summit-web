@@ -13,7 +13,7 @@
 
 ## Live Demo 
 
-[Live Demo Link](https://jaferidrees.github.io/Html_css_Capstone/)
+[Live Demo Link](https://jaferidrees.github.io/Analytical-chemists-summit-web/aboutme.html)
 
 
 ## Getting Started
